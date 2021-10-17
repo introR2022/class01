@@ -479,7 +479,7 @@ class: middle, inverse
 
 # Lab 1
 
-[Link]()
+[Link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EdTjtwRl5F5DjFDlgrOB6BgB4fqdODik9Jkp0cA_sB696Q?e=jdqlwW)
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 library(countdown)
