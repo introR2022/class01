@@ -120,14 +120,14 @@ Os encontros síncronos acontecerão nas **terças-feiras**, de **08:00 às 12:0
 ## Unidades
 
 .small[
-| **Data**           | **Descrição da Atividade**   
+ **Data**           | **Descrição da Atividade**   
 ---------------------|---------------------------
-| 19/10| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio, Git-Github e Rpubs; Hello R; RMarkdown.|
-| 26/10| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. |
-| 09/11| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados| 
-| 16/11| Unidade 4: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados|
-| 23/11| Unidade 5: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos| 
-| **Total de Horas** | 30 horas    |
+ 19/10| Unidade 1: Comunicação por meio do R: ambientação no R, RStudio, Git-Github e Rpubs; Hello R; RMarkdown.|
+ 26/10| Unidade 2: Visualização de dados no R; estrutura de dados no R; tipos de dados, importação de base de dados, criação de objeto (vetores, matrizes, data frames), operadores aritméticos, de comparação e lógicos; visualização de informações gerenciais e científicas. |
+ 09/11| Unidade 3: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados| 
+ 16/11| Unidade 4: Manipulação e transformação de dados no R: funções para manipulação e tratamento de dados. Estatística descritiva e mineração de dados|
+ 23/11| Unidade 5: Argumentos lógicos; ifelse, which, igual, maior, menor que, join; subconjuntos com argumentos lógicos| 
+ **Total de Horas** | 30 horas    |
 ]
 ---
 
@@ -197,12 +197,22 @@ Os estudantes que forem considerados em violação da política de integridade a
 ]]
 ]
 
+
 ---
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="110%"}
+## Intervalo
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="90%"}
 knitr::include_graphics("https://retaoliveira.github.io/relements/figures/allison_horst/monster_support.jpg")
 ```
 
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(countdown)
+```
+
+```{r echo=FALSE}
+countdown(minutes = 10, seconds = 00, play_sound = TRUE)
+```
 
 ---
 
@@ -414,27 +424,73 @@ Você pode optar por atualizar seu conteúdo.
 
 # Um documento para chamar de MEU!
 
-.tip[
-Faça seu primeiro documento RMarkdown
+.midi[
+Crie pelo menos três tipos de documentos .Rmd e tente apropriar o mesmo conteúdo em todos eles. Quais desafios encontrou quanto às diferenças de formação? 
+
+> Dica 1: use o botão de `knitr`. 
+
+> Dica 2: você pode criar documentos com diferentes temas de maneira automática usando uma função no cabeçalho `YAML`.
+Possible themes: default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, yeti
+
+> Dica 3: Table of contents
 ]
 
-.small[
+.pull-left[
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/allison_horst/html.png")
+```
+]
 
-1. Faça o download do arquivo [`01-covid.Rmd`](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/ESP5b0WfqYJFplhjSRiciG0BNKQZnv2HzbHnPBxZEBr3Ew?e=gVcWCQ) e salve em um diretório acessível do seu computador. 
-
-2. Abra o arquivo no RStudio: `File | Open File` e navegue até o arquivo `01-covid.Rmd` selecionando-o. 
-
-3. Você identificará o arquivo por meio do `YAML` com `title: "Mortes por COVID-19"`
-
-4. Verifique se houve alguma mensagem abaixo da barra de ferramentas da janela de edição do `RMarkdown` para que sejam instalados `packages` necessários para rodar esse `.Rmd`
-
-4. Clique no botão de `knitr`. 
-
-Aprecie o seu primeiro documento! 
+.pull-right[
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("https://retaoliveira.github.io/relements/figures/allison_horst/toc.png")
+```
 ]
 
 ---
 
+# Um documento para chamar de MEU!
+
+Aprecie o seu primeiro documento! 
+
+.center[
+.large[
+
+DESAFIO: Tente publicá-lo no RPubs!
+]]
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(countdown)
+```
+
+```{r echo=FALSE}
+countdown(minutes = 20, seconds = 00, play_sound = TRUE)
+```
+
+
+
+---
+
+class: middle, inverse
+
+# Conhecendo R como ferramenta estatística e computacional
+
+---
+
+# Lab 1
+
+[Link]()
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(countdown)
+```
+
+```{r echo=FALSE}
+countdown(minutes = 30, seconds = 00, play_sound = TRUE)
+```
+
+
+---
 
 class:  center, middle
 
@@ -445,6 +501,7 @@ class:  center, middle
 ## Para a próxima semana...
 
 Atividades 1 e 2 concluídas.
+
 Laboratório 1 concluído. 
 
 ---
