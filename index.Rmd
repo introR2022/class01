@@ -59,31 +59,6 @@ xaringanExtra::use_extra_styles(
 )
 ```
 
-```{css include=FALSE}
-.panelset {
-   --panel-tab-foreground: currentColor;
-   --panel-tab-background: unset;
-   --panel-tab-active-foreground: currentColor;
-   --panel-tab-active-background: unset;
-   --panel-tab-active-border-color: currentColor;
-   --panel-tab-hover-foreground: currentColor;
-   --panel-tab-hover-background: unset;
-   --panel-tab-hover-border-color: currentColor;
-   --panel-tab-inactive-opacity: 0.5;
-   --panel-tabs-border-bottom: #ddd;
-   --panel-tab-font-family: Sen;
-   --panel-tab-background-color-active: #fffbe0;
-   --panel-tab-border-color-active: #023d4d;
-}
-
-.panelset .panel-tabs .panel-tab > a {
-	color: #023d4d;
-}
-
-.panelset .panel-tabs {
-  font-size: 0.5rem;
-}
-```
 
 ## Proposta pedagógica
 
@@ -206,13 +181,6 @@ Os estudantes que forem considerados em violação da política de integridade a
 knitr::include_graphics("https://retaoliveira.github.io/relements/figures/allison_horst/monster_support.jpg")
 ```
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-library(countdown)
-```
-
-```{r echo=FALSE}
-countdown(minutes = 10, seconds = 00, play_sound = TRUE)
-```
 
 ---
 
@@ -307,17 +275,18 @@ Algo que... seja possível construir para algo **bonito**
 
 ---
 
-## RMarkdown
+# RMarkdown
 
-.panelset[
-.panel[.panel-name[O que é?]
+## O que é
 
 Vou colocar aqui algumas informações-chave sobre a construção geral de informações a partir do uso do RMarkdown. Entretanto, informações adicionais podem ser obtidas de maneira detalhada no site: 
 
 + [Documentos dinâmicos no R by Fernando Mayer & Walmes Zeviani](http://cursos.leg.ufpr.br/prr/capDocDin.html)
 ]
 
-.panel[.panel-name[Organização]
+---
+
+# Organização
 
 ### Seções e subseções
 
@@ -330,50 +299,50 @@ Basta enumerar:
 1. Item 1
 2. Item 2
 
-]
+---
 
-.panel[.panel-name[Imagens]
+# Images
+
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
 knitr::include_graphics("https://retaoliveira.github.io/relements/figures/rmarkdown_rockstar.png")
 ```
 
 
-]
+---
 
-.panel[.panel-name[Chunks]
+# Chunks
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 x <- rnorm(30)
 x
 
 ```
-]
 
-.panel[.panel-name[Mais chunks]
-```{r}
-plot(x)
-```
-]
-]
 
 ---
 
-.panelset[
+# Mais chunks
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+plot(x)
+```
 
-.panel[.panel-name[Visualização]
+
+---
+
+# Visualização
 
 Também podemos fazer um histograma dessa variável simulada
 
-```{r}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 hist(x)
 ```
 
-]
 
-.panel[.panel-name[YAML]
 
-#### `YAML` (Yet Another Markup Language)
+---
+
+# `YAML` (Yet Another Markup Language)
 
 No `YAML`, os dados são escritos em forma de lista aninhada. Os metadados em `YAML` são colocados sempre no início de um documento, e são delimitados por `---`. 
 
@@ -382,9 +351,9 @@ knitr::include_graphics("https://retaoliveira.github.io/relements/figures/yaml_s
 ```
 
 
-]
+---
 
-.panel[.panel-name[Gerando...]
+# Gerando....
 
 `knitr`
 ```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="120%"}
@@ -392,9 +361,9 @@ knitr::include_graphics("https://retaoliveira.github.io/relements/figures/knitr.
 ```
 
 
-]
+---
 
-.panel[.panel-name[WOW!]
+# WOW
 
 Na [galeria do RStudio](https://rmarkdown.rstudio.com/gallery.html) diferentes estruturas de informação produzida por meio de `RMarkdown` podem ser encontradas! 
 
@@ -402,10 +371,9 @@ Na [galeria do RStudio](https://rmarkdown.rstudio.com/gallery.html) diferentes e
 knitr::include_graphics("https://retaoliveira.github.io/relements/figures/allison_horst/knitr.png")
 ```
 
-]
+---
 
-.panel[.panel-name[RPubs]
-
+# Rpubs
 
 No RStudio, crie um novo documento `R Markdown` escolhendo `Arquivo | Novo | R Markdown`.
 Clique no botão `Knit HTML` na barra de ferramentas do doc para visualizar seu documento.
@@ -418,8 +386,8 @@ Uma vez terminado e clicando no botão `Continue` na parte inferior, você irá 
 Você pode optar por atualizar seu conteúdo.
 
 
-]
-]
+
+
 ---
 
 # Um documento para chamar de MEU!
@@ -459,13 +427,6 @@ Aprecie o seu primeiro documento!
 DESAFIO: Tente publicá-lo no RPubs!
 ]]
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-library(countdown)
-```
-
-```{r echo=FALSE}
-countdown(minutes = 20, seconds = 00, play_sound = TRUE)
-```
 
 
 
@@ -481,13 +442,6 @@ class: middle, inverse
 
 [Link](https://cefetmgbr-my.sharepoint.com/:u:/g/personal/renataoliveira_cefetmg_br/EdTjtwRl5F5DjFDlgrOB6BgB4fqdODik9Jkp0cA_sB696Q?e=jdqlwW)
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-library(countdown)
-```
-
-```{r echo=FALSE}
-countdown(minutes = 30, seconds = 00, play_sound = TRUE)
-```
 
 
 ---
