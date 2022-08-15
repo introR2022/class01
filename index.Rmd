@@ -257,7 +257,7 @@ hist(x)
 
 No `YAML`, os dados são escritos em forma de lista aninhada. Os metadados em `YAML` são colocados sempre no início de um documento, e são delimitados por `---`. 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="120%"}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="90%"}
 knitr::include_graphics("https://retaoliveira.github.io/relements/figures/yaml_sele.png")
 ```
 
